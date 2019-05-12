@@ -1033,3 +1033,7 @@ footer {
 ul.timeline > li > p > em, .highlighted > p > em {
   font-weight: bold;
 }
+
+#easterEgg:hover {
+  color: red;
+}
