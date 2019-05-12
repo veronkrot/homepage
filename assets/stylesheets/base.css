@@ -1020,3 +1020,7 @@ footer {
     margin-bottom: 0;
   }
 }
+
+ul.timeline > li > p > em, .highlighted > p > em {
+  font-weight: bold;
+}
