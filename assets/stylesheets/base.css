@@ -606,6 +606,15 @@ article {
 .contacts li a.phone:hover {
   color: dimgrey;
 }
+
+.contacts li a.twitter:hover {
+  color: #38A1F3;
+}
+
+.contacts li a.instagram:hover {
+  color: mediumvioletred;
+}
+
 .contacts li a.website {
   display: none;
 }
