@@ -257,6 +257,24 @@ article {
     }
 }
 
+.wave {
+    color: peachpuff;
+    padding-top: calc((100% - 1127px) / 2);
+    height: 7em;
+    box-sizing: content-box;
+    background: currentColor;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    position: relative;
+    top: calc(7em - 1px);
+}
+
 /* Page */
 .page {
     position: relative;
@@ -264,6 +282,7 @@ article {
     background: white;
     box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
     transition: box-shadow 0.2s linear;
+    border-radius: 3em;
 }
 .page[style^="border-color"] {
     padding: 4.5em;
