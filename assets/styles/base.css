@@ -257,13 +257,32 @@ article {
     }
 }
 
+.wave {
+    color:#62bcc4;
+    padding-top: calc((100% - 1127px) / 2);
+    height: 7em;
+    box-sizing: content-box;
+    background: currentColor;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    position: relative;
+    top: calc(7em - 1px);
+}
+
 /* Page */
 .page {
     position: relative;
     padding: 3em;
     background: white;
-    box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+    box-shadow: 0 10px 100px 0 rgba(98, 188, 196, 0.1);
     transition: box-shadow 0.2s linear;
+    border-radius: 3em;
 }
 .page[style^="border-color"] {
     padding: 4.5em;
@@ -284,7 +303,7 @@ article {
 }
 @media only screen {
     .page:hover {
-        box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+        box-shadow: 0 10px 100px 0 rgba(98, 188, 196, 0.3);
     }
 }
 @media only screen and (max-width: 767px) {
@@ -519,6 +538,7 @@ article {
     flex: 1 0 auto;
     max-width: 15rem;
     width: 100%;
+    border-radius: 50%;
 }
 @media only screen and (max-width: 1199px) {
     .avatar-wrapper {
@@ -531,8 +551,8 @@ article {
     border-top: 1px solid rgba(222, 222, 222, 1);
 }
 .divider.fat {
-    border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
-    width: 33%;
+    border-top: 0.3571428571428571em solid rgba(98, 188, 196, 1);
+    width: 61%;
 }
 
 /* Language */
@@ -616,6 +636,12 @@ article {
 }
 .contacts li a.website {
     display: none;
+}
+.contacts li a.twitter:hover {
+    color: #38A1F3;
+}
+.contacts li a.instagram:hover {
+    color: #eb5e98;
 }
 .contacts li a .icon {
     fill: currentColor;
@@ -739,7 +765,7 @@ li.details > input {
 /* Highlighted list item */
 li.highlighted {
     padding: 0.5em;
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(98, 188, 196, 0.2);
     border-radius: 4px;
 }
 
@@ -1043,4 +1069,10 @@ footer {
     main:nth-last-child(3) {
         margin-bottom: 0;
     }
+}
+
+.gif {
+    width: 48%;
+    position: absolute;
+    right: 0;
 }
